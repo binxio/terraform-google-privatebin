@@ -9,7 +9,7 @@ Select the project to deploy PrivateBin.
 
 <walkthrough-project-billing-setup></walkthrough-project-billing-setup>
 
-### Deploy
+## Deploy
 
 To deploy PrivateBin to {{project-id}} in {{GOOGLE_REGION}}, type:
 
@@ -25,7 +25,7 @@ terraform init
 terraform apply -auto-approve
 ```
 
-### Accessing privatebin
+## Accessing privatebin
 
 To access the newly deployed privatebin, open the `terraform.tfstate` file and click on the url of the privatebin service.
 
