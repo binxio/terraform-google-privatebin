@@ -35,6 +35,7 @@ resource "google_cloud_run_service" "privatebin" {
   metadata {
     annotations = {
       "run.googleapis.com/launch-stage" = "BETA"
+      "run.googleapis.com/ingress"      = "all"
     }
   }
 
