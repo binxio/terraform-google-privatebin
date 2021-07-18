@@ -28,4 +28,4 @@ module "privatebin" {
 The application will be deployed in the project and region specified by the passed in providers.
 After terraform apply, the output will print the URL of your privatebin installation.
 
-[<img width="200" src="https://storage.googleapis.com/gweb-cloudblog-publish/images/open_in_cloud_shell.max-900x900.jpg"/>](https://console.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/binxio/terraform-google-privatebin.git&cloudshell_git_branch=main&cloudshell_working_dir=examples/using_defaults&cloudshell_image=gcr.io/graphite-cloud-shell-images/terraform:latest&open_in_editor=main.tf&cloudshell_tutorial=./tutorial.md)
+[<img width="200" src="https://storage.googleapis.com/gweb-cloudblog-publish/images/open_in_cloud_shell.max-900x900.jpg"/>](https://console.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/binxio/terraform-google-privatebin.git&cloudshell_git_branch=main&cloudshell_working_dir=examples/using_defaults&open_in_editor=main.tf&cloudshell_tutorial=tutorial.md)
