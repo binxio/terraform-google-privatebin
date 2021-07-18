@@ -17,7 +17,7 @@ To deploy privatebin in your Google project, add the following module to your te
 
 ```hcl
 module "privatebin" {
-  source  = "git::https:/github.com/binxio/terraform-google-privatebin.git?ref=0.1.0"
+  source  = "git::https:/github.com/binxio/terraform-google-privatebin.git?ref=0.2.0"
 
   providers = {
     google      = google
@@ -28,4 +28,4 @@ module "privatebin" {
 The application will be deployed in the project and region specified by the passed in providers.
 After terraform apply, the output will print the URL of your privatebin installation.
 
-[<img width="200" src="https://storage.googleapis.com/gweb-cloudblog-publish/images/open_in_cloud_shell.max-900x900.jpg"/>](https://console.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/binxio/terraform-google-privatebin.git&cloudshell_git_branch=main&cloudshell_working_dir=examples/using_defaults&open_in_editor=main.tf&cloudshell_tutorial=tutorial.md)
+Alternatively you can [![open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/binxio/terraform-google-privatebin.git&cloudshell_git_branch=main&cloudshell_working_dir=examples/using_defaults&open_in_editor=main.tf&cloudshell_tutorial=tutorial.md).

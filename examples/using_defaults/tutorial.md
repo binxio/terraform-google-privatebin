@@ -1,13 +1,21 @@
 # Serverless deployment of PrivateBin on Google Cloud Platform
 
+This tutorial will deploy PrivateBin in your project using Terraform. It will take just a few minutes to complete.
+
 ## Setup
 
-<walkthrough-author name="markvanholsteijn@binx.io" tutorialName="privatebin-on-gcp" repositoryUrl="https://github.com/binxio/terraform-google-privatebin"></walkthrough-author>
-<walkthrough-watcher-constant key="GOOGLE_REGION" value="europe-west4"></walkthrough-watcher-constant>
+<walkthrough-author 
+  name="markvanholsteijn@binx.io" 
+  tutorialName="privatebin-on-gcp" 
+  repositoryUrl="https://github.com/binxio/terraform-google-privatebin"/>
+
+<walkthrough-watcher-constant 
+  key="GOOGLE_REGION" 
+  value="europe-west4"/>
 
 Select the project to deploy PrivateBin.
 
-<walkthrough-project-billing-setup></walkthrough-project-billing-setup>
+<walkthrough-project-setup billing="true"/>
 
 ## Deploy
 
@@ -27,7 +35,11 @@ terraform apply -auto-approve
 
 ## Accessing privatebin
 
-To access the newly deployed privatebin, open the `terraform.tfstate` file and click on the url of the privatebin service.
+To access the newly deployed application, type:
+```bash
+terraform output url
+```
+and click on the URL. you can now store and share confidential pastes.
 
 ## Cleanup
 
