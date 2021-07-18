@@ -3,6 +3,7 @@
 ## Setup
 
 <walkthrough-author name="markvanholsteijn@binx.io" tutorialName="privatebin-on-gcp" repositoryUrl="https://github.com/binxio/terraform-google-privatebin"></walkthrough-author>
+<walkthrough-watcher-constant key="GOOGLE_REGION" value="europe-west4"></walkthrough-watcher-constant>
 
 Select the project to deploy PrivateBin.
 
@@ -10,37 +11,32 @@ Select the project to deploy PrivateBin.
 
 ## Deploy
 
-To deploy'PrivateBin to {{project-id}} in europe-west4.
+To deploy PrivateBin to {{project-id}} in {{GOOGLE_REGION}}, type:
 
 ```bash
 export GOOGLE_CLOUD_PROJECT={{project-id}}
-export GOOGLE_REGION=europe-west4
+export GOOGLE_REGION={{GOOGLE_REGION}}
 ```
 
 Now, type:
 
 ```bash
 terraform init
-```
-
-followed by:
-
-```bash
-terraform apply
-```
-
-Terraform will show you what it plans to do. Type "yes" to accept the plan.
-
-```bash
-yes
+terraform apply -auto-approve
 ```
 
 ## Accessing privatebin
 
-To access privatebin, type:
+To access the newly deployed privatebin, click on the link.
 
-```bash
-open $(terraform output url)
-```
+<walkthrough-editor-select-regex filePath="examples/using_defaults/terraform.tfstate" regex="https://privatebin-.*run\.app">private bin url</walkthrough-editor-select-regex>
 
 You can now paste secrets and share the links with others
+
+## Cleanup
+
+To undeploy privatebin and destroy all resources, type: 
+
+```bash
+terraform destroy -auto-approve
+```
