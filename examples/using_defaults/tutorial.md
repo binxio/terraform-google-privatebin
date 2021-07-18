@@ -29,7 +29,8 @@ terraform apply -auto-approve
 
 To access the newly deployed privatebin, click on the link.
 
-<walkthrough-editor-select-regex filePath="examples/using_defaults/terraform.tfstate" regex="https://privatebin-.*run\.app">private bin url</walkthrough-editor-select-regex>
+<walkthrough-editor-select-regex filePath="terraform.tfstate" regex="https:..privatebin-.*run\.app">private bin url</walkthrough-editor-select-regex>
+<walkthrough-editor-select-regex filePath="examples/using_defaults/terraform.tfstate" regex="https:..privatebin-.*run\.app">private bin url</walkthrough-editor-select-regex>
 
 You can now paste secrets and share the links with others
 
