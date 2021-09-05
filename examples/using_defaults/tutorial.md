@@ -15,7 +15,7 @@ This tutorial will deploy PrivateBin in your project using Terraform. It will ta
 
 Select the project to deploy PrivateBin.
 
-<walkthrough-project-setup billing="true"/>
+<walkthrough-project-setup apis="secretmanager.googleapis.com,run.googleapis.com" billing="true"/>
 
 ## Deploy
 
