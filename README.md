@@ -39,3 +39,18 @@ docker build --build-arg RELEASE=master --tag $YOUR_IMAGE --output type=registry
 ```
 Now you set the variable `image` to $YOUR_IMAGE.
 
+configure the privatebin configuration
+======================================
+You can configure your own privatebin configuration file. Make sure that you set the storage class to GoogleCloudStorage
+
+```toml
+[model]
+class = GoogleCloudStorage
+```
+
+and the bucket name to `${private_bucket_name}`:
+
+```toml
+[model_options]
+bucket = "${privatebin_bucket_name}"
+```
